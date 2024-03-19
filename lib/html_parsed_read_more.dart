@@ -73,7 +73,6 @@ class _HtmlParsedReadMoreState extends State<HtmlParsedReadMore> {
             data: widget.text,
             style: {
               '#': Style(
-                margin: Margins.zero,
                 fontFamily: widget.fontFamily,
                 textOverflow: widget.textOverflow,
                 color: widget.textColor ??
