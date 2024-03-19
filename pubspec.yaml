@@ -1,7 +1,7 @@
 name: html_parsed_read_more
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/Dicksenz/flutter_html_parsed_read_more
 
 environment:
   sdk: ">=3.2.0 <4.0.0"
