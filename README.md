@@ -1,6 +1,8 @@
-<b>Sample</b>
+<b>Sample code</b>
 
     HtmlParsedReadMore(
+        readLessText: 'Read less',
+        readMoreText: 'Read more',
         maxLinesReadLess: 3,
         maxLinesReadMore: 1000,
         textOverflow: TextOverflow.ellipsis,

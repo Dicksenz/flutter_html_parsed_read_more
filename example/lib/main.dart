@@ -30,6 +30,8 @@ class HomeView extends StatelessWidget {
       body: const Column(
         children: [
           HtmlParsedReadMore(
+            readLessText: 'Read less',
+            readMoreText: 'Read more',
             maxLinesReadLess: 3,
             maxLinesReadMore: 1000,
             textOverflow: TextOverflow.ellipsis,
