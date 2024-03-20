@@ -1,7 +1,16 @@
 library html_parsed_read_more;
 
+// ignore: depend_on_referenced_packages
+import 'package:html/dom.dart' as dom;
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
+
+typedef OnTap = void Function(
+  String? url,
+  RenderContext context,
+  Map<String, String> attributes,
+  dom.Element? element,
+);
 
 class HtmlParsedReadMore extends StatefulWidget {
   const HtmlParsedReadMore({
@@ -17,6 +26,7 @@ class HtmlParsedReadMore extends StatefulWidget {
     this.textButtonFontSize,
     this.buttonAlignment = Alignment.bottomRight,
     this.buttonPadding = const EdgeInsets.only(top: 3),
+    this.onLinkTap,
     super.key,
   });
   final String text;
@@ -31,6 +41,7 @@ class HtmlParsedReadMore extends StatefulWidget {
   final double? textButtonFontSize;
   final AlignmentGeometry buttonAlignment;
   final EdgeInsetsGeometry buttonPadding;
+  final OnTap? onLinkTap;
 
   @override
   State<HtmlParsedReadMore> createState() => _HtmlParsedReadMoreState();
@@ -71,6 +82,7 @@ class _HtmlParsedReadMoreState extends State<HtmlParsedReadMore> {
         children: [
           Html(
             data: widget.text,
+            onLinkTap: widget.onLinkTap,
             style: {
               '#': Style(
                 fontFamily: widget.fontFamily,
