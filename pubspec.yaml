@@ -1,6 +1,6 @@
 name: html_parsed_read_more
 description: "A Flutter package which allows the user to enter html contents which can be collapsed and expanded based on user defined trimming conditions"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Dicksenz/flutter_html_parsed_read_more
 
 environment:
