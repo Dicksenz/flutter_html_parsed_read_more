@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_html: ^2.2.1
+  html: ^0.15.4
 
 dev_dependencies:
   flutter_test:

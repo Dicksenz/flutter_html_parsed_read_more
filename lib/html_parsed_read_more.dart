@@ -1,6 +1,5 @@
 library html_parsed_read_more;
 
-// ignore: depend_on_referenced_packages
 import 'package:html/dom.dart' as dom;
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
